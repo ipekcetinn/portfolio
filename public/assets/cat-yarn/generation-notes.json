@@ -1,0 +1,21 @@
+[
+  {
+    "file": "cat-body.png",
+    "method": "OpenAI built-in image_gen, edit",
+    "input": "../engraved-cat.png",
+    "prompt": "Edit target: the supplied seated engraved cat. Asset type: transparent animation body layer for a web portfolio. Preserve the exact same cat, seated pose, face, ears, tail, fur engraving, dark burgundy and aged cream palette, proportions, framing and square canvas registration. Change ONLY the cat's front foreleg on the VIEWER'S LEFT (the left of the two long vertical front legs): remove that entire foreleg and its front paw from just below the shoulder/upper chest down to the floor. Restore the fur on the stationary torso behind it naturally, leaving transparent negative space below the belly where the removed foreleg was. The other front leg and both hind feet remain unchanged. Do not draw a new leg, paw or yarn ball. This is the stationary body layer; the removed leg will be overlaid separately. Retain a generous fur-overlap zone around that shoulder so the moving limb can hide its attachment underneath the torso. Actual alpha transparency, no paper or checkerboard, no added shadow, no lettering. Keep the original square composition, ideally 1280 by 1280, with all landmarks in their original normalized pixel positions."
+  },
+  {
+    "file": "cat-paw.png",
+    "method": "OpenAI built-in image_gen, edit",
+    "input": "../engraved-cat.png",
+    "prompt": "Edit target: supplied original seated engraving cat. Extract ONLY its front foreleg on the VIEWER'S LEFT, the long narrow vertical front leg whose paw is just left of the centre-bottom paw. It begins in the shoulder/upper chest at approximately x=580,y=720 and descends to approximately x=615,y=1195 in the original 1280 square image. Include a rounded generous upper-foreleg fur cap overlapping the shoulder, the entire foreleg and paw with toes, with the same dark burgundy ink/cream fur crosshatching and exact original shape and size. Remove EVERYTHING ELSE from the image to true alpha transparency (no cat head, no chest or belly patch, no other legs, no hind feet, no tail). Crucial for animation registration: retain the ENTIRE original 1280x1280 transparent canvas. Do NOT crop to the leg and do NOT recenter the isolated leg. Its pixels must stay at their original original canvas positions, lower centre-left. This is an isolated reusable limb layer, not a floating whole cat illustration. Preserve print texture and natural fur edges. No text, no shadow, no paper, no background."
+  },
+  {
+    "file": "yarn-ball.png",
+    "method": "OpenAI built-in image_gen, generation from style reference",
+    "input": "../engraved-cat.png",
+    "userApproved": true,
+    "prompt": "Use case illustration-story. Supporting style reference only: supplied seated vintage engraved cat, match its exact dark burgundy ink, warm aged cream and sepia crosshatching. Create a separate isolated realistic wool YARN BALL asset, NOT a cat and not a full scene. Single slightly irregular loosely wound ball, tactile twisted wool strands crossing in several directions, fine short wool fibres and old copperplate/woodcut engraved texture. Matte, restrained cream and sepia, no modern cartoon, no photorealistic plastic sheen. True alpha background, no ground, no shadow, no frame, no text. Square 1280 canvas. Composition for web animation: ball approximately occupies x=180..1100 and y=300..1160; a short naturally bent single wool thread rises from the upper-left quadrant of the ball, curving gently to meet the exact point (x=640, y=160). The very end of that thread must end exactly at (640,160), intended connection to a web canvas rope. Do not crop any fibres or the loose end. Full ball and its attached loose end must form ONE coherent engraved cutout. It should visually belong beside the reference cat and use similar ink density and linework. No paws or cat parts."
+  }
+]

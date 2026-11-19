@@ -1,0 +1,56 @@
+.cat-yarn-scene {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: max(28px, env(safe-area-inset-bottom));
+}
+.cat-yarn-scene__stage {
+  position: relative;
+  display: block;
+  width: min(100%, 460px);
+  aspect-ratio: 460 / 390;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  touch-action: pan-y pinch-zoom;
+  -webkit-tap-highlight-color: transparent;
+}
+.cat-yarn-scene__stage:focus-visible { outline: 1px dashed #c5b5a7; outline-offset: 6px; }
+.cat-yarn-scene__stage:disabled { cursor: default; }
+.cat-yarn-scene__body, .cat-yarn-scene__paw {
+  position: absolute;
+  left: 19.5652%;
+  top: 0;
+  width: 78.2609%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+}
+.cat-yarn-scene__body { z-index: 1; }
+.cat-yarn-scene__paw {
+  z-index: 2;
+  transform-origin: 44% 55%;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 48%, #000 59%);
+  mask-image: linear-gradient(to bottom, transparent 48%, #000 59%);
+}
+.cat-yarn-scene__ball {
+  position: absolute;
+  left: 20.6522%;
+  bottom: 0;
+  width: 24.3478%;
+  aspect-ratio: 1;
+  z-index: 3;
+  /* Rotation and the loose thread share the fixed rope attachment. */
+  transform-origin: 50% 12.5%;
+  pointer-events: none;
+}
+.cat-yarn-scene__ball img { display: block; width: 100%; height: auto; pointer-events: none; user-select: none; }
+.cat-yarn-scene__anchor { position: absolute; left: 50%; top: 12.5%; width: 0; height: 0; pointer-events: none; }
+@media (max-width: 700px) {
+  .cat-yarn-scene { padding-top: 8px; }
+  .cat-yarn-scene__stage { width: min(100%, 390px); }
+}
