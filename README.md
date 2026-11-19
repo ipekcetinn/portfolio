@@ -1,19 +1,19 @@
-# ?pek ?etin ? Portfolio
+# İpek Çetin — Portfolio
 
-React, TypeScript ve Vite ile geli?tirilmi? tek sayfal?k portfolyo.
-Mevcut vintage kolaj tasar?m?, mobil stiller, SVG spiral, ?effaf kedi ve scroll animasyonlar? korunur.
+React, TypeScript ve Vite ile geliştirilmiş tek sayfalık portfolyo.
+Mevcut vintage kolaj tasarımı, mobil stiller, SVG spiral, şeffaf kedi ve scroll animasyonları korunur.
 
-## Geli?tirme
+## Geliştirme
 
 ```sh
 npm install
 npm run dev
 ```
 
-http://localhost:3000 ? Kaydedilen de?i?iklikler Vite taraf?ndan otomatik yans?t?l?r.
-Do?rudan index.html dosyas?na ?ift t?klamak yerine geli?tirme sunucusunu kullan.
+http://localhost:3000 — Kaydedilen değişiklikler Vite tarafından otomatik yansıtılır.
+Doğrudan index.html dosyasına çift tıklamak yerine geliştirme sunucusunu kullan.
 
-## Kontroller ve ?retim
+## Kontroller ve üretim
 
 ```sh
 npm run lint
@@ -23,31 +23,37 @@ npm run build
 npm run preview
 ```
 
-?retim ??kt?s? `dist/` klas?r?d?r. Statik hosting i?in bu klas?r? yay?nla.
-`npm run preview`, geli?tirme sunucusu kapal?yken ayn? 3000 portunda ?retim ??kt?s?n? a?ar.
+Üretim çıktısı `dist/` klasörüdür. Statik hosting için bu klasörü yayınla.
+`npm run preview`, geliştirme sunucusu kapalıyken aynı 3000 portunda üretim çıktısını açar.
+
+## Web sitesine erişim
+
+GitHub deposu kaynak kodlarını barındırır; kodları yüklemek siteyi otomatik olarak yayınlamaz.
+Bu proje henüz canlıya alınmamıştır. `localhost:3000` adresi yalnızca geliştirme sunucusunun çalıştığı bilgisayardan açılır.
+Ziyaretçilerin siteye erişebilmesi için üretim çıktısı GitHub Pages gibi bir statik hosting hizmetinde yayınlanmalıdır.
 
 ## Dosyalar
 
-- `src/main.tsx`: React ba?lang?? noktas? ve CSS importu.
-- `src/App.tsx`: Sayfa kompozisyonu ve animasyon ya?am d?ng?s?.
-- `src/components/`: Hero, About, Experience, Education, Training, Skills, Projects, Contact ve di?er bile?enler.
-- `src/lib/scrollAnimations.ts`: Tipli scroll kontrol?; effect temizlenince dinleyiciler, observer ve rAF i?leri kald?r?l?r.
-- `src/styles.css`: Mevcut tasar?m ve responsive stiller.
-- `public/assets/`: Yerel g?rseller; yeni g?rselleri buraya ekle. Taray?c? yollar? `assets/...` olarak korunur.
-- `vite.config.ts`: Yerel sunucu ve geli?tirme dosya eri?im ayarlar?.
-- `scripts/`: React HTML ??kt?s? ve scroll davran??? testleri.
+- `src/main.tsx`: React başlangıç noktası ve CSS importu.
+- `src/App.tsx`: Sayfa kompozisyonu ve animasyon yaşam döngüsü.
+- `src/components/`: Hero, About, Experience, Education, Training, Skills, Projects, Contact ve diğer bileşenler.
+- `src/lib/scrollAnimations.ts`: Tipli scroll kontrolü; effect temizlenince dinleyiciler, observer ve rAF işleri kaldırılır.
+- `src/styles.css`: Mevcut tasarım ve responsive stiller.
+- `public/assets/`: Yerel görseller; yeni görselleri buraya ekle. Tarayıcı yolları `assets/...` olarak korunur.
+- `vite.config.ts`: Yerel sunucu ve geliştirme dosya erişim ayarları.
+- `scripts/`: React HTML çıktısı ve scroll davranışı testleri.
 
-## ??erik ve g?rseller
+## İçerik ve görseller
 
-Sayfa i?erikleri ?ngilizcedir. E?itim yaln?zca At?l?m University (2023?2027, expected) kayd?n? i?erir.
-Projeler alan?nda hayali ?al??ma bulunmaz. Telefon numaras? yay?nlanmaz; yerel `cv.pdf` Git taraf?ndan yok say?l?r,
-Vite geli?tirme sunucusunda eri?ime kapal?d?r ve ?retim ??kt?s?na al?nmaz.
+Sayfa içerikleri İngilizcedir. Eğitim yalnızca Atılım University (2023–2027, expected) kaydını içerir.
+Projeler alanında hayali çalışma bulunmaz. Telefon numarası yayınlanmaz; yerel `cv.pdf` Git tarafından yok sayılır,
+Vite geliştirme sunucusunda erişime kapalıdır ve üretim çıktısına alınmaz.
 
-Kolajlar dekoratif ill?strasyonlard?r; ger?ek kurum foto?raf? olarak sunulmaz.
-Ayr?nt?lar `public/assets/collage/generation-notes.json` ve `public/assets/NEEDED-ASSETS.md` i?indedir.
+Kolajlar dekoratif illüstrasyonlardır; gerçek kurum fotoğrafı olarak sunulmaz.
+Ayrıntılar `public/assets/collage/generation-notes.json` ve `public/assets/NEEDED-ASSETS.md` içindedir.
 
-Scroll hareketi kullan?c? kayd?rmas?na ba?l?d?r. Azalt?lm?? hareket tercihinde hareket ve sabitleme devre d??? kal?r.
-Node testleri davran?? mant???n? ve React ??kt?s?n? kontrol eder; ger?ek cihaz g?r?n?m? ayr?ca do?rulanmal?d?r.
+Scroll hareketi kullanıcı kaydırmasına bağlıdır. Azaltılmış hareket tercihinde hareket ve sabitleme devre dışı kalır.
+Node testleri davranış mantığını ve React çıktısını kontrol eder; gerçek cihaz görünümü ayrıca doğrulanmalıdır.
 
 ## Interactive yarn rope
 
