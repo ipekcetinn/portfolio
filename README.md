@@ -28,9 +28,11 @@ npm run preview
 
 ## Web sitesine erişim
 
-GitHub deposu kaynak kodlarını barındırır; kodları yüklemek siteyi otomatik olarak yayınlamaz.
-Bu proje henüz canlıya alınmamıştır. `localhost:3000` adresi yalnızca geliştirme sunucusunun çalıştığı bilgisayardan açılır.
-Ziyaretçilerin siteye erişebilmesi için üretim çıktısı GitHub Pages gibi bir statik hosting hizmetinde yayınlanmalıdır.
+Canlı site: [ipekcetinn.github.io/portfolio](https://ipekcetinn.github.io/portfolio/)
+
+Site GitHub Pages üzerinde yayınlanır. `main` dalına gönderilen değişiklikler GitHub Actions ile
+otomatik olarak derlenir ve yayınlanır. Yayın durumunu deponun Actions sekmesinden takip edebilirsin.
+`localhost:3000` adresi yalnızca geliştirme sunucusunun çalıştığı bilgisayardan açılır.
 
 ## Dosyalar
 
