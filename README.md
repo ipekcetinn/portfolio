@@ -1,19 +1,19 @@
 # İpek Çetin — Portfolio
 
-React, TypeScript ve Vite ile geliştirilmiş tek sayfalık portfolyo.
-Mevcut vintage kolaj tasarımı, mobil stiller, SVG spiral, şeffaf kedi ve scroll animasyonları korunur.
+A single-page portfolio built with React, TypeScript, and Vite.
+The design features vintage collages, responsive layouts, an SVG spiral, transparent cat artwork, and scroll animations.
 
-## Geliştirme
+## Development
 
 ```sh
 npm install
 npm run dev
 ```
 
-http://localhost:3000 — Kaydedilen değişiklikler Vite tarafından otomatik yansıtılır.
-Doğrudan index.html dosyasına çift tıklamak yerine geliştirme sunucusunu kullan.
+Open http://localhost:3000. Vite automatically updates the page when you save changes.
+Use the development server instead of opening `index.html` directly.
 
-## Kontroller ve üretim
+## Checks and production build
 
 ```sh
 npm run lint
@@ -23,39 +23,39 @@ npm run build
 npm run preview
 ```
 
-Üretim çıktısı `dist/` klasörüdür. Statik hosting için bu klasörü yayınla.
-`npm run preview`, geliştirme sunucusu kapalıyken aynı 3000 portunda üretim çıktısını açar.
+The production build is generated in `dist/`. Deploy this directory to a static hosting service.
+`npm run preview` serves the production build on port 3000; stop the development server before running it.
 
-## Web sitesine erişim
+## Live website
 
-Canlı site: [ipekcetinn.github.io/portfolio](https://ipekcetinn.github.io/portfolio/)
+Visit [ipekcetinn.github.io/portfolio](https://ipekcetinn.github.io/portfolio/).
 
-Site GitHub Pages üzerinde yayınlanır. `main` dalına gönderilen değişiklikler GitHub Actions ile
-otomatik olarak derlenir ve yayınlanır. Yayın durumunu deponun Actions sekmesinden takip edebilirsin.
-`localhost:3000` adresi yalnızca geliştirme sunucusunun çalıştığı bilgisayardan açılır.
+The site is hosted on GitHub Pages. Changes pushed to `main` are automatically built and deployed
+through GitHub Actions. Check the repository's Actions tab for deployment status.
+The `localhost:3000` address is accessible only on the computer running the development server.
 
-## Dosyalar
+## Project structure
 
-- `src/main.tsx`: React başlangıç noktası ve CSS importu.
-- `src/App.tsx`: Sayfa kompozisyonu ve animasyon yaşam döngüsü.
-- `src/components/`: Hero, About, Experience, Education, Training, Skills, Projects, Contact ve diğer bileşenler.
-- `src/lib/scrollAnimations.ts`: Tipli scroll kontrolü; effect temizlenince dinleyiciler, observer ve rAF işleri kaldırılır.
-- `src/styles.css`: Mevcut tasarım ve responsive stiller.
-- `public/assets/`: Yerel görseller; yeni görselleri buraya ekle. Tarayıcı yolları `assets/...` olarak korunur.
-- `vite.config.ts`: Yerel sunucu ve geliştirme dosya erişim ayarları.
-- `scripts/`: React HTML çıktısı ve scroll davranışı testleri.
+- `src/main.tsx`: React entry point and CSS imports.
+- `src/App.tsx`: Page composition and animation lifecycle.
+- `src/components/`: Hero, About, Experience, Education, Training, Skills, Projects, Contact, and other components.
+- `src/lib/scrollAnimations.ts`: Typed scroll controller; effect cleanup removes listeners, observers, and pending animation frames.
+- `src/styles.css`: Visual design and responsive styles.
+- `public/assets/`: Local artwork. Add new images here; browser paths use `assets/...`.
+- `vite.config.ts`: Local server, development file access, and production base path settings.
+- `scripts/`: Tests for rendered React HTML and scroll behavior.
 
-## İçerik ve görseller
+## Content and artwork
 
-Sayfa içerikleri İngilizcedir. Eğitim yalnızca Atılım University (2023–2027, expected) kaydını içerir.
-Projeler alanında hayali çalışma bulunmaz. Telefon numarası yayınlanmaz; yerel `cv.pdf` Git tarafından yok sayılır,
-Vite geliştirme sunucusunda erişime kapalıdır ve üretim çıktısına alınmaz.
+Page content is in English. The education section lists Atılım University (2023–2027, expected).
+The projects section contains no fictional work. No phone number is published. The local `cv.pdf` is ignored by Git,
+blocked by the Vite development server, and excluded from the production build.
 
-Kolajlar dekoratif illüstrasyonlardır; gerçek kurum fotoğrafı olarak sunulmaz.
-Ayrıntılar `public/assets/collage/generation-notes.json` ve `public/assets/NEEDED-ASSETS.md` içindedir.
+Collages are decorative illustrations, not photographs of actual institutions.
+Details are available in `public/assets/collage/generation-notes.json` and `public/assets/NEEDED-ASSETS.md`.
 
-Scroll hareketi kullanıcı kaydırmasına bağlıdır. Azaltılmış hareket tercihinde hareket ve sabitleme devre dışı kalır.
-Node testleri davranış mantığını ve React çıktısını kontrol eder; gerçek cihaz görünümü ayrıca doğrulanmalıdır.
+Scroll animations follow the user's scrolling. Reduced-motion preferences disable animation and pinning.
+Node tests check behavior and rendered React output; appearance on real devices should be verified separately.
 
 ## Interactive yarn rope
 
